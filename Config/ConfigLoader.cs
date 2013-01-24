@@ -67,7 +67,7 @@ namespace Config
             {
                 var convertedValue = Convert(value, property.PropertyType);
 
-                property.SetValue(configurationObject, convertedValue);
+                property.SetValue(configurationObject, convertedValue, null);
 
                 return true;
             }
@@ -91,7 +91,7 @@ namespace Config
             {
                 var convertedValue = Convert(value, property.PropertyType);
 
-                property.SetValue(configurationObject, convertedValue);
+                property.SetValue(configurationObject, convertedValue, null);
 
                 return true;
             }
